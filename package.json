@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "mocha ./login/tk_project.js",
-    "autenticacao-simples": "mocha ./login/autenticacao_simples.js"
+    "autenticacao-simples": "mocha ./login/autenticacao_simples.js",
+    "extrato-completo": "mocha ./extrato/extrato_completo.js"
   },
   "keywords": [
     "mocha",
