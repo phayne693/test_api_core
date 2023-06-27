@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Test API core",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./login/tk_project.js",
+    "autenticacao-simples": "mocha ./login/autenticacao_simples.js"
   },
   "keywords": [
     "mocha",
