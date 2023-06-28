@@ -22,7 +22,7 @@ describe('Login', () => {
         }
 
         request.post('oauth/users').set('tk-project', token).send(data).then((res) => {
-            console.log(res.body.data.token)
+            console.log(res.body.data)
         })
     })
 })

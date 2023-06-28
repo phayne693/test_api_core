@@ -8,8 +8,8 @@ export const tk_user = async () =>{
     let token = await tk_project()
 
     let data = {
-        email : 'jefersonqueiroz2009@hotmail.com',
-        password: '159159'
+        email : 'thiago@teraidc.com.br',
+        password: '112022'
     }
 
     const res  = await request.post('oauth/users').set('tk-project', token).send(data);

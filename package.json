@@ -10,7 +10,18 @@
     "extrato-completo": "mocha ./extrato/extrato_completo.js",
     "extrato-pix": "mocha --timeout 5000 ./extrato/extrato_pix.js",
     "extrato-periodo": "mocha --timeout 5000 ./extrato/extrato_periodo.js",
-    "extrato-periodo-pix": "mocha --timeout 5000 ./extrato/extrato_periodo_pix.js"
+    "extrato-periodo-pix": "mocha --timeout 5000 ./extrato/extrato_periodo_pix.js",
+    "validar-email": "mocha ./dados-conta/validar_email.js",
+    "validar-usuario": "mocha --timeout 5000 ./dados-conta/validar_usuario.js",
+    "obter-dados-usuario": "mocha --timeout 5000 ./dados-conta/obter_dados_usuario.js",
+    "obter-dados-conta": "mocha --timeout 5000 ./dados-conta/obter_dados_conta.js",
+    "saldo-conta": "mocha --timeout 5000 ./dados-conta/saldo_conta.js",
+    "documentos-conta": "mocha --timeout 5000 ./dados-conta/documentos_conta.js",
+    "reenvio-documentos": "mocha --timeout 5000 ./dados-conta/reenvio_documentos.js",
+    "atualizar-dados-post": "mocha --timeout 5000 ./dados-conta/atualizar_dados_post.js",
+    "atualizar-dados-put": "mocha --timeout 5000 ./dados-conta/atualizar_dados_put.js",
+    "atualizar-senha": "mocha --timeout 5000 ./dados-conta/atualizar_senha.js",
+    "consultar-cpf-cnpj": "mocha --timout 5000 ./dados-conta/consultar_cpf_cnpj_fit.js"
   },
   "keywords": [
     "mocha",
