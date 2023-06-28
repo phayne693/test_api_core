@@ -7,7 +7,9 @@
   "scripts": {
     "test": "mocha ./login/tk_project.js",
     "autenticacao-simples": "mocha ./login/autenticacao_simples.js",
-    "extrato-completo": "mocha ./extrato/extrato_completo.js"
+    "extrato-completo": "mocha ./extrato/extrato_completo.js",
+    "extrato-pix": "mocha --timeout 5000 ./extrato/extrato_pix.js",
+    "extrato-periodo": "mocha --timeout 5000 ./extrato/extrato_periodo.js"
   },
   "keywords": [
     "mocha",

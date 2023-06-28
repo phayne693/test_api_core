@@ -1,5 +1,6 @@
 import supertest from "supertest";
 import { tk_project } from "../helpers/token_project.js";
+import { user_id } from "../helpers/auth_simples.js";
 
 const request = supertest('https://api.norwaydigital.com.br/prod/v1/');
 
