@@ -1,6 +1,8 @@
 import supertest from "supertest";
 import { tk_project } from "../helpers/token_project.js";
 import { user_id } from "../helpers/auth_simples.js";
+import dotenv from 'dotenv'
+dotenv.config()
 
 const request = supertest('https://api.norwaydigital.com.br/prod/v1/');
 
@@ -17,8 +19,8 @@ describe('Login', () => {
     it('POST oauth/users', ()=>{
 
         let data = {
-            email: 'jefersonqueiroz2009@hotmail.com',
-            password: '159159'
+            email: process.env.LOGIN_JE,
+            password: process.env.SENHA_JE
         }
 
         request.post('oauth/users').set('tk-project', token).send(data).then((res) => {

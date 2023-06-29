@@ -1,6 +1,8 @@
 import supertest from "supertest";
 import { tk_project } from "../helpers/token_project.js";
 import { tk_user, user_id, tax_id } from "../helpers/auth_simples.js";
+import dotenv from 'dotenv'
+dotenv.config()
 
 const request = supertest('https://api.norwaydigital.com.br/prod/v1/');
 
@@ -20,7 +22,7 @@ describe('Documentos Conta', () => {
     
 
     let data = {
-        taxId : "43996081880",
+        taxId : process.env.CPF_JE,
         document: 0
     }
 

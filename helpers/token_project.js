@@ -1,4 +1,6 @@
 import supertest from "supertest";
+import dotenv from 'dotenv'
+dotenv.config()
 
 const request = supertest('https://api.norwaydigital.com.br/prod/v1');
 
@@ -6,8 +8,8 @@ const request = supertest('https://api.norwaydigital.com.br/prod/v1');
 export const tk_project = async () => {
 
     let data = {
-        "secretKey":"973AE9E57F212FC28E4FA63F4E3F1",
-        "boundId":"br.com.infinity"
+        "secretKey":process.env.SECRET_KEY,
+        "boundId": process.env.BOUND_ID
     }
 
     const res = await request.post('/oauth/projects').send(data)

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha ./login/tk_project.js",
-    "autenticacao-simples": "mocha ./login/autenticacao_simples.js",
+    "autenticacao-simples": "mocha --timeout 5000 ./login/autenticacao_simples.js",
     "extrato-completo": "mocha ./extrato/extrato_completo.js",
     "extrato-pix": "mocha --timeout 5000 ./extrato/extrato_pix.js",
     "extrato-periodo": "mocha --timeout 5000 ./extrato/extrato_periodo.js",
@@ -31,13 +31,16 @@
   "author": "Jeferson Queiroz",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.22.5",
+    "@babel/cli": "^7.6.4",
     "@babel/core": "^7.22.5",
-    "@babel/node": "^7.22.5",
+    "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.22.5",
-    "@babel/register": "^7.22.5",
+    "@babel/register": "^7.6.2",
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
     "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
   }
 }

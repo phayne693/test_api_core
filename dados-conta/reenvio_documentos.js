@@ -1,6 +1,8 @@
 import supertest from "supertest";
 import { tk_project } from "../helpers/token_project.js";
 import { tk_user, user_id, tax_id } from "../helpers/auth_acc_thiago.js";
+import dotenv from 'dotenv'
+dotenv.config()
 
 const request = supertest('https://api.norwaydigital.com.br/prod/v1/');
 
@@ -20,7 +22,7 @@ describe('Reenvio Documentos', () => {
     
 
     let data = {
-        taxId:"36114337808",
+        taxId: process.env.CPF_TH,
         Documents:[
             {
                 url:"https://infinity-uploads-documents-account-dev.s3.sa-east-1.amazonaws.com/documents/jpeg/8c004609-2286-413c-99a5-ec1aa1a09035-15-09-2022-01-05-40.jpeg",
@@ -36,14 +38,14 @@ describe('Reenvio Documentos', () => {
             }
         ],
         Endereco:{
-            cep:"05205520",
-            state:"SP",
-            city:"São Paulo",
-            neighborhood:"Jardim Russo",
-            street:"Via de Pedestre Francisco Soriano",
-            service:"correios",
-            number:"174",
-            complement:"casa"
+            cep:process.env.cep,
+            state:process.env.STATE,
+            city:process.env.CITY,
+            neighborhood:process.env.neighborhood,
+            street:process.env.STREET,
+            service:process.env.SERVICE,
+            number:process.env.NUMBER,
+            complement:process.env.COMPLEMENT
         }
     }
 
