@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/run-tests",
+        "dest": "/api/run-tests.js"
+      }
+    ]
+  }
+  
