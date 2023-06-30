@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 const request = supertest(app);
 
-app.post('/run-tests', (req, res) => {
+app.get('/run-tests', (req, res) => {
   // Coloque aqui o código dos seus testes Mocha
   describe('Users', () => {
     it('POST /TK-PROJECT', () => {
