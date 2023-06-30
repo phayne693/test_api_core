@@ -21,7 +21,8 @@
     "atualizar-dados-post": "mocha --timeout 5000 ./dados-conta/atualizar_dados_post.js",
     "atualizar-dados-put": "mocha --timeout 5000 ./dados-conta/atualizar_dados_put.js",
     "atualizar-senha": "mocha --timeout 5000 ./dados-conta/atualizar_senha.js",
-    "consultar-cpf-cnpj": "mocha --timout 5000 ./dados-conta/consultar_cpf_cnpj_fit.js"
+    "consultar-cpf-cnpj": "mocha --timout 5000 ./dados-conta/consultar_cpf_cnpj_fit.js",
+    "enviar-conta-fit": "mocha --timeout 5000 ./nova-conta/enviar_conta_fit.js"
   },
   "keywords": [
     "mocha",
