@@ -2,7 +2,7 @@
     "version": 2,
     "routes": [
       {
-        "src": "/run-tests",
+        "src": "/api",
         "dest": "/api/run-tests.js"
       }
     ]
