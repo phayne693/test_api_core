@@ -5,6 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node .",
+    "dev": "index.js",
     "test": "mocha ./login/tk_project.js",
     "autenticacao-simples": "mocha --timeout 5000 ./login/autenticacao_simples.js",
     "extrato-completo": "mocha ./extrato/extrato_completo.js",
