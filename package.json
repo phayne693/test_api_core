@@ -25,7 +25,9 @@
     "enviar-conta-fit": "mocha --timeout 5000 ./nova-conta/enviar_conta_fit.js",
     "criar-usuario-completo":"mocha --timeout 5000 ./nova-conta/criar_usuario_completo.js",
     "criar-usuario-simplificado":"mocha --timeout 5000 ./nova-conta/criar_usuario_simplificado.js",
-    "criar-usuario-simplificado-pj":"mocha --timeout 5000 ./nova-conta/criar_usuario_simplificado_pj.js"
+    "criar-usuario-simplificado-pj":"mocha --timeout 5000 ./nova-conta/criar_usuario_simplificado_pj.js",
+    "lista-pagamentos-usuario":"mocha --timeout 5000 ./pagamento/lista_pagamento_usuario.js",
+    "consulta-codigo-barras":"mocha --timeout 5000 ./pagamento/consulta_codigo_barras.js"
   },
   "keywords": [
     "mocha",
