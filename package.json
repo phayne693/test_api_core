@@ -33,7 +33,15 @@
     "consulta-pagamento-id": "mocha --timeout 5000 ./pagamento/consulta_pagamento_id.js",
     "cancelar-pagamento-boleto": "mocha --timeout 5000 ./pagamento/cancelar_pagamento_boleto.js",
     "gerar-boleto":"mocha --timeout 5000 ./cobranca/gerar_boleto.js",
-    "listar-boletos":"mocha --timeout 5000 ./cobranca/listar_boletos_gerados.js"
+    "listar-boletos":"mocha --timeout 5000 ./cobranca/listar_boletos_gerados.js",
+    "gerar-boleto-tarifa":"mocha --timeout 5000 ./cobranca/gerar_boleto_tarifa.js",
+    "transferencia-entre-contas":"mocha --timeout 5000 ./transferencia/transferencia_entre_contas.js",
+    "consulta-transferencia-id":"mocha --timeout 5000 ./transferencia/consulta_transferencia_id.js",
+    "consulta-transferencia-id-fit":"mocha --timeout 5000 ./transferencia/consulta_transferencia_id_fit.js",
+    "cancelar-transferencia-id":"mocha --timeout 5000 ./transferencia/cancelar_transferencia_id.js",
+    "transferencia-outros-bancos":"mocha --timeout 5000 ./transferencia/transferencia_outros_bancos.js",
+    "gerar-qr-dinamico":"mocha --timeout 5000 ./pix/qr-copia-cola/geracao_qr_dinamico.js",
+    "gerar-qr-estatico":"mocha --timeout 5000 ./pix/qr-copia-cola/geracao_qr_estatico.js"
   },
   "keywords": [
     "mocha",
