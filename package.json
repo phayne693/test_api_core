@@ -27,7 +27,13 @@
     "criar-usuario-simplificado":"mocha --timeout 5000 ./nova-conta/criar_usuario_simplificado.js",
     "criar-usuario-simplificado-pj":"mocha --timeout 5000 ./nova-conta/criar_usuario_simplificado_pj.js",
     "lista-pagamentos-usuario":"mocha --timeout 5000 ./pagamento/lista_pagamento_usuario.js",
-    "consulta-codigo-barras":"mocha --timeout 5000 ./pagamento/consulta_codigo_barras.js"
+    "consulta-codigo-barras":"mocha --timeout 5000 ./pagamento/consulta_codigo_barras.js",
+    "consulta-taxa-boleto": "mocha --timeout 5000 ./pagamento/consulta_taxas_boleto.js",
+    "pagamento-boleto": "mocha --timeout 5000 ./pagamento/pagamento_boleto.js",
+    "consulta-pagamento-id": "mocha --timeout 5000 ./pagamento/consulta_pagamento_id.js",
+    "cancelar-pagamento-boleto": "mocha --timeout 5000 ./pagamento/cancelar_pagamento_boleto.js",
+    "gerar-boleto":"mocha --timeout 5000 ./cobranca/gerar_boleto.js",
+    "listar-boletos":"mocha --timeout 5000 ./cobranca/listar_boletos_gerados.js"
   },
   "keywords": [
     "mocha",
