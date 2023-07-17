@@ -10,6 +10,13 @@ describe('Transferencias outros Bancos', ()=>{
     let token_user
     let data
     let id_user
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = String(today.getMonth() + 1).padStart(2, '0');
+    let day = String(today.getDate()).padStart(2, '0');
+
+    let date = `${year}/${month}/${day}`;
+    console.log(date)
     before(async()=>{
         token_project = await tk_project()
         token_user = await tk_user()
