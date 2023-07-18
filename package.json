@@ -48,7 +48,8 @@
     "trasnferir-pix-chave":"mocha --timeout 5000 ./pix/transferencia/transferencia_pix_chave.js",
     "transferir-pix-copia-cola":"mocha --timeout 5000 ./pix/transferencia/trasnferencia_pix_copia_cola.js",
     "gerar-tarifa":"mocha --timeout 5000 ./pix/tarifa/geracao_tarifa.js",
-    "criar-chave-pix":"mocha --timeout 5000 ./pix/chaves/criar_chave_pix.js"
+    "criar-chave-pix-aleatoria":"mocha --timeout 5000 ./pix/chaves/criar_chave_pix.js",
+    "criar-chave-pix-email":"mocha --timeout 5000 ./pix/chaves/criar_chave_pix_email.js"
   },
   "keywords": [
     "mocha",
