@@ -17,11 +17,11 @@ describe('Criar Usuario Simplificado PJ', ()=> {
         "access": "40",
         "companyId": "cf1f36af-dbfc-4062-bfd2-b6aefd22b000",
         "name": "Teste empresa",
-        "email": "empresa1@teraidc.com.br",
+        "email": "empresa12222@teraidc.com.br",
         "birthDate": "01-01-1999",
         "salary": "10000",
         "MonthlyIncome": "15000",
-        "taxId": "48844618000461",
+        "taxId": "48844618123461",
         "terms": true,
         "documents": [
             {
@@ -33,7 +33,7 @@ describe('Criar Usuario Simplificado PJ', ()=> {
         "password": "123456",
         "emails": [
             {
-                "email": "empresa1@teraidc.com.br",
+                "email": "empresa12222@teraidc.com.br",
                 "type": 1,
                 "isMain": true
             }
