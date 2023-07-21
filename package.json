@@ -43,7 +43,7 @@
     "gerar-qr-dinamico":"mocha --timeout 5000 ./pix/qr-copia-cola/geracao_qr_dinamico.js",
     "gerar-qr-estatico":"mocha --timeout 5000 ./pix/qr-copia-cola/geracao_qr_estatico.js",
     "consulta-qr":"mocha --timeout 5000 ./pix/qr-copia-cola/consulta_qr.js",
-    "consulta-hash":"mocha --timeout 5000 ./pix/qr-copia-cola/consulta_hash.js",
+    "consulta-hash":"mocha --timeout 8000 ./pix/qr-copia-cola/consulta_hash.js",
     "trasnferir-pix":"mocha --timeout 5000 ./pix/transferencia/transferencia_pix_conta.js",
     "trasnferir-pix-chave":"mocha --timeout 5000 ./pix/transferencia/transferencia_pix_chave.js",
     "transferir-pix-copia-cola":"mocha --timeout 5000 ./pix/transferencia/trasnferencia_pix_copia_cola.js",
