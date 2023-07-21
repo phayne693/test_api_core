@@ -3,6 +3,7 @@ import {tk_user, user_id, tax_id} from '../../helpers/auth_simples.js'
 import { hash_qr } from '../../helpers/hash_qr.js'
 import supertest from 'supertest'
 import dotenv from 'dotenv'
+// import crypto from 'crypto'
 dotenv.config()
 
 const request = supertest('https://api.norwaydigital.com.br/prod/v1/');
@@ -20,15 +21,35 @@ describe('Consulta Hash', () => {
         token_user = await tk_user()
         // console.log(token_project)
         // console.log(token_user)
+        hash = await hash_qr()
+        // function hashToBase64(input, algorithm) {
+        //     const hash = crypto.createHash(algorithm).update(input).digest();
+        //     const base64Hash = hash.toString('base64');
+        //     return base64Hash;
+        // }
+          
+        // const input = hash;
+        // const algorithm = 'sha256';
+        
+        // const base64Hash = hashToBase64(input, algorithm);
+        // console.log('Base64 hash:', base64Hash);
+        const base64String = hash;
+
+        // Decodificando a string base64
+        const decodedString = Buffer.from(base64String, 'base64').toString('utf-8');
+
+        // console.log('Decoded string:', decodedString);
         data = {
             "userId": id_user = await user_id(),
             "taxId": taxId = await tax_id(),
-            "hash": "00020101021226770014br.gov.bcb.pix2555qrcode.fitbank.com.br/QR/cob/2C9F746A46243EEDFB7442F6DB5204000053039865802BR5925Thiago de Lucena Sobrinho6009Sao Paulo61080251500062070503***6304E191"
+            "hash": decodedString
         }
+        console.log(data)
         // console.log(hash)
-        console.log(taxId)
-        console.log(id_user)
+        // console.log(taxId)
+        // console.log(id_user)
     })
+    
 
 
     it('POST pix/consulta/copiaecola', () => {

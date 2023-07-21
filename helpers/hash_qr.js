@@ -12,11 +12,11 @@ export const hash_qr = async() => {
     let id_user = await user_id()
     let qr_document = await geracao_qr_dinamico()
     let data = {
-            userId: id_user,
-            documento: qr_document 
-        }
+        userId: id_user,
+        documento: qr_document 
+    }
 
-
+    await new Promise((r) => setTimeout(r, 1500))
 
     const res = await request.post('pix/qraleatorio').set('tk-project', token_project).set('tk-user', token_user).send(data)
     const dados_validados = res.body.response.GetPixQRCodeByIdInfo
