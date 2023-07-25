@@ -49,7 +49,10 @@
     "transferir-pix-copia-cola":"mocha --timeout 5000 ./pix/transferencia/trasnferencia_pix_copia_cola.js",
     "gerar-tarifa":"mocha --timeout 5000 ./pix/tarifa/geracao_tarifa.js",
     "criar-chave-pix-aleatoria":"mocha --timeout 5000 ./pix/chaves/criar_chave_pix.js",
-    "criar-chave-pix-email":"mocha --timeout 5000 ./pix/chaves/criar_chave_pix_email.js"
+    "criar-chave-pix-email":"mocha --timeout 5000 ./pix/chaves/criar_chave_pix_email.js",
+    "listar-chaves-pix":"mocha --timeout 5000 ./pix/chaves/listar_chaves_pix.js",
+    "obter-dados-chave-pix":"mocha --timeout 5000 ./pix/chaves/obter_dados_chave_pix.js",
+    "status-chave-pix":"mocha --timeout 5000 ./pix/chaves/status_chave_pix.js"
   },
   "keywords": [
     "mocha",
