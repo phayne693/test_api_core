@@ -17,8 +17,8 @@ describe('Listar Chaves Pix', () => {
         token_project = await tk_project()
         token_user = await tk_user()
         id_user = await user_id()
-        // console.log(token_project)
-        // console.log(token_user)
+        console.log(token_project)
+        console.log(token_user)
     })
 
 
