@@ -73,7 +73,9 @@
     "ler-saque":"mocha --timeout 5000 ./saque/ler_qrcode.js",
     "buscar-indicados-diretos":"mocha --timeout 5000 ./indicacao-2.0/obter_indicados_diretos.js",
     "criar-indicacao":"mocha --timeout 5000 ./indicacao-2.0/indicacao_criar.js",
-    "obter-codigo-indicacao":"mocha --timeout 5000 ./indicacao-2.0/obter_codigo_indicacao.js"
+    "obter-codigo-indicacao":"mocha --timeout 5000 ./indicacao-2.0/obter_codigo_indicacao.js",
+    "enviar-dado-oxxy":"mocha --timeout 5000 ./oxxy/enviar_vidas.js",
+    "apolice-oxxy":"mocha --timeout 5000 ./oxxy/apolice.js"
   },
   "keywords": [
     "mocha",
